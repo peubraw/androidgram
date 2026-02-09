@@ -16,6 +16,7 @@ source .venv/bin/activate
 # Install requirements
 echo "Installing requirements..."
 pip install --upgrade pip
+pip install setuptools wheel
 pip install -r requirements.txt
 
 echo "################################################"
