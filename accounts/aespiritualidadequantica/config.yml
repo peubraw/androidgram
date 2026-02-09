@@ -1,0 +1,136 @@
+##############################################################################
+# For more information on parameters, refer to: 
+# https://docs.gramaddict.org/#/configuration?id=configuration-file
+#
+# Note: be sure to comment out any parameters not used by adding a # in front
+# AGAIN: YOU DON'T HAVE TO DELETE THE LINE, BUT ONLY COMMENT IT WITH A #!
+##############################################################################
+# General Configuration
+##############################################################################
+
+username: aespiritualidadequantica # you have to put your IG name here!
+# device: put_your_device_id_there # 'adb devices' in the console to know it.  It's needed only if you have more than 1 device connected
+app-id: com.instagram.android
+use-cloned-app: false
+allow-untested-ig-version: false # Using an untested version of IG would cause unexpected behavior because some elements in the user interface may have been changed
+screen-sleep: true
+screen-record: false
+speed-multiplier: 1
+debug: false
+close-apps: false
+kill-atx-agent: false
+restart-atx-agent: false
+disable-block-detection: false
+disable-filters: false
+dont-type: false
+# scrape-to-file: scraped.txt
+total-crashes-limit: 5
+count-app-crashes: false
+shuffle-jobs: true
+truncate-sources: 2-5
+
+##############################################################################
+# Actions
+##############################################################################
+
+## Interaction (active jobs)
+blogger-followers: [ livrosheliocouto, videosheliocouto, caminhodaspalestras ]
+#blogger-following: [ username1, username2 ]
+blogger-post-likers: [ livrosheliocouto, videosheliocouto, caminhodaspalestras ]
+#blogger: [ username1, username2 ]
+#hashtag-likers-top: [ hashtag1, hashtag2 ]
+#hashtag-likers-recent: [ hashtag1, hashtag2 ]
+#hashtag-posts-top: [ hashtag1, hashtag2 ]
+#hashtag-posts-recent: [ hashtag1, hashtag2 ]
+#place-posts-top: [ place1, place2 ]
+#place-posts-recent: [ place1, place2 ]
+#place-likers-top: [ place1, place2 ]
+#place-likers-recent: [ place1, place2 ]
+#interact-from-file: [usernames1.txt 10-15, usernames2.txt 3]
+#posts-from-file: posts.txt
+#feed: 2-5 # is the number of likes you will give in feed
+
+## Special modifier for jobs and sources
+watch-video-time: 10-20  # Reduzido para visualizações mais rápidas
+watch-photo-time: 2-3    # Reduzido para navegação mais ágil
+can-reinteract-after: 120 # Re-interagir após 5 dias (mais agressivo)
+delete-interacted-users: false # Manter histórico mas permitir re-interação
+
+## Unfollow (unfollow jobs)
+#unfollow: 10-20
+#unfollow-any: 10-20
+#unfollow-non-followers: 10-20
+#unfollow-any-non-followers: 10-20
+#unfollow-any-followers: 10-20
+#unfollow-from-file: [usernames1.txt 7-15, usernames2.txt 6]
+
+## Special modifier for unfollow jobs
+sort-followers-newest-to-oldest: false
+unfollow-delay: 15
+
+## Remove followers (active jobs)
+#remove-followers-from-file: [remove1.txt 5-10, remove2.txt 6]
+
+## Special modifier for remove followers
+delete-removed-followers: true
+
+## Post Processing
+# analytics: false # no more supported
+telegram-reports: false # for using telegram-reports you have also to configure telegram.yml in your account folder
+
+## Special actions
+# pre-script: pre_script_path_here
+# post-script: post_script_path_here
+
+##############################################################################
+# Source Limits - MODO AGRESSIVO
+##############################################################################
+
+interactions-count: 60-80  # Aumentado significativamente
+likes-count: 2-3
+likes-percentage: 100
+stories-count: 2-3
+stories-percentage: 50-70  # Aumentado
+carousel-count: 3-5
+carousel-percentage: 80-90  # Aumentado
+max-comments-pro-user: 2-3
+interact-percentage: 50-70  # Aumentado
+#follow-percentage: 50-70    # Aumentado
+#follow-limit: 80            # Aumentado
+skipped-list-limit: 300-400 # Aumentado
+skipped-posts-limit: 80-120 # Aumentado
+fling-when-skipped: 3-5
+min-following: 100
+
+##############################################################################
+# Total Limits Per Session - MODO AGRESSIVO
+##############################################################################
+
+total-likes-limit: 280-350       # Aumentado ~50%
+total-follows-limit: 90-120      # Aumentado ~50%
+total-unfollows-limit: 90-120    # Aumentado ~50%
+total-watches-limit: 280-350     # Aumentado ~50%
+total-successful-interactions-limit: 280-350  # Aumentado ~50%
+total-interactions-limit: 600-800  # Aumentado ~50%
+total-comments-limit: 8-12       # Aumentado
+total-pm-limit: 8-12             # Aumentado
+total-scraped-limit: 250-300     # Aumentado
+
+##############################################################################
+# Ending Session Conditions
+##############################################################################
+
+end-if-likes-limit-reached: true
+end-if-follows-limit-reached: false
+end-if-watches-limit-reached: false
+end-if-comments-limit-reached: false
+end-if-pm-limit-reached: false
+
+##############################################################################
+# Scheduling - MODO AGRESSIVO
+##############################################################################
+
+#working-hours: [10.15-16.40, 18.15-22.46]
+#time-delta: 10-15
+repeat: 120-150  # Reduzido para sessões mais frequentes
+total-sessions: -1 # -1 or commented for infinite sessions
