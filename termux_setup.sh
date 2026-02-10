@@ -6,7 +6,7 @@ pkg update && pkg upgrade -y
 
 # Install dependencies
 echo "Installing dependencies..."
-pkg install python git clang libxml2 libxslt libjpeg-turbo zlib freetype -y
+pkg install python git clang libxml2 libxslt libjpeg-turbo zlib freetype android-tools -y
 
 # Create virtual environment
 echo "Creating virtual environment..."
